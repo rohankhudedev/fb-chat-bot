@@ -32,6 +32,10 @@ if (preg_match('[time|current time|now]', strtolower($message)))
         $message_to_reply = $result;
     }
 }
+if ($message == "hi" || $message == "hello")
+{
+    $answer = "Hello";
+}
 else
 {
     $message_to_reply = 'Huh! what do you mean?';
